@@ -1,23 +1,4 @@
 ```
-wget -O /etc/profile.d/30-sysinfo.sh https://raw.githubusercontent.com/wifikunetworks/v1/main/30-sysinfo.sh
-wget -O /tmp/sysinfo/model https://raw.githubusercontent.com/wifikunetworks/v1/main/model
-wget -O /etc/banner https://raw.githubusercontent.com/wifikunetworks/v1/main/banner
-wget -O /etc/config/system https://raw.githubusercontent.com/wifikunetworks/hg/main/system
-wget -O /etc/modem/atcommands.user https://raw.githubusercontent.com/wifikunetworks/v1/main/atcommands.user
-wget -O /etc/modem/atcmmds.user https://raw.githubusercontent.com/wifikunetworks/v1/main/atcmmds.user
-wget -O /etc/config/atcmds.user https://raw.githubusercontent.com/wifikunetworks/v1/main/atcmds.user
-wget -O /www/luci-static/material/brand.png https://raw.githubusercontent.com/wifikunetworks/v1/main/brand.png
-wget -O /www/luci-static/argon/brand.png https://raw.githubusercontent.com/wifikunetworks/v1/main/brand.png
-wget -O /etc/rc.local https://raw.githubusercontent.com/wifikunetworks/v1/main/rc.local
-wget -O /etc/crontabs/root https://raw.githubusercontent.com/wifikunetworks/v1/main/root
-wget -O /usr/bin/bled https://raw.githubusercontent.com/wifikunetworks/v1/main/bled && chmod +x /usr/bin/bled
-wget -O /usr/lib/lua/luci/view/themes/argon/footer_login.htm https://raw.githubusercontent.com/wifikunetworks/v1/main/footer_login.htm
-wget -O /usr/lib/lua/luci/view/themes/argon/footer.htm https://raw.githubusercontent.com/wifikunetworks/v1/main/footer.htm
-wget -O /usr/lib/lua/luci/view/themes/argon/header.htm https://raw.githubusercontent.com/wifikunetworks/v1/main/header.htm
-wget -O - https://raw.githubusercontent.com/wifikunetworks/v1/main/navbar.tar | tar -xf - -C /www/luci-static/argon/
-wget -O /usr/bin/bled https://raw.githubusercontent.com/wifikunetworks/v1/main/bled
-
-
 wget --no-check-certificate "https://raw.githubusercontent.com/wifikunetworks/b860h/main/autotimesync.sh" -O /usr/bin/autotimesync.sh && chmod +x /usr/bin/autotimesync.sh
 
 wget --no-check-certificate https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-aarch64.tgz -O /tmp/speedtest.tgz && tar -xzvf /tmp/speedtest.tgz -C /usr/bin/ && chmod +x /usr/bin/speedtest
@@ -30,5 +11,22 @@ opkg update && wget --no-check-certificate -P /root https://raw.githubuserconten
 
 opkg update && wget --no-check-certificate -P /root https://raw.githubusercontent.com/wifikunetworks/b860h/main/luci-app-zerotier_git-23.137.55137-42dce6a_all.ipk && opkg install --force-overwrite /root/luci-*-zerotier*.ipk && rm /root/*.ipk
 
-opkg update && wget --no-check-certificate -P /root https://raw.githubusercontent.com/wifikunetworks/v1/main/luci-app-sms-tool-js_2.0.20-20240201_all.ipk && opkg install --force-reinstall /root/luci-*-sms*.ipk && rm /root/*.ipk
+opkg update && wget --no-check-certificate -P /root https://raw.githubusercontent.com/wifikunetworks/hg/main/luci-app-sms-tool-js_2.0.20-20240201_all.ipk && opkg install --force-reinstall /root/luci-*-sms*.ipk && rm /root/*.ipk
+
+wget -O /etc/profile.d/30-sysinfo.sh https://raw.githubusercontent.com/wifikunetworks/hg/main/30-sysinfo.sh
+wget -O /tmp/sysinfo/model https://raw.githubusercontent.com/wifikunetworks/hg/main/model
+wget -O /etc/banner https://raw.githubusercontent.com/wifikunetworks/hg/main/banner
+wget -O /etc/config/system https://raw.githubusercontent.com/wifikunetworks/hg/main/system
+wget -O /etc/modem/atcommands.user https://raw.githubusercontent.com/wifikunetworks/hg/main/atcommands.user
+wget -O /etc/modem/atcmmds.user https://raw.githubusercontent.com/wifikunetworks/hg/main/atcmmds.user
+wget -O /etc/config/atcmds.user https://raw.githubusercontent.com/wifikunetworks/hg/main/atcmds.user
+wget -O /www/luci-static/material/brand.png https://raw.githubusercontent.com/wifikunetworks/hg/main/brand.png
+wget -O /www/luci-static/argon/brand.png https://raw.githubusercontent.com/wifikunetworks/hg/main/brand.png
+wget -O /etc/rc.local https://raw.githubusercontent.com/wifikunetworks/hg/main/rc.local
+wget -O /etc/crontabs/root https://raw.githubusercontent.com/wifikunetworks/hg/main/root
+wget -O /usr/bin/hgled https://raw.githubusercontent.com/wifikunetworks/hg/main/hgled && chmod +x /usr/bin/hgled
+wget -O /usr/lib/lua/luci/view/themes/argon/footer_login.htm https://raw.githubusercontent.com/wifikunetworks/hg/main/footer_login.htm
+wget -O /usr/lib/lua/luci/view/themes/argon/footer.htm https://raw.githubusercontent.com/wifikunetworks/hg/main/footer.htm
+wget -O /usr/lib/lua/luci/view/themes/argon/header.htm https://raw.githubusercontent.com/wifikunetworks/hg/main/header.htm
+wget -O - https://raw.githubusercontent.com/wifikunetworks/hg/main/navbar.tar | tar -xf - -C /www/luci-static/argon/
 ```
