@@ -2,6 +2,7 @@
 wget -O /etc/profile.d/30-sysinfo.sh https://raw.githubusercontent.com/wifikunetworks/v1/main/30-sysinfo.sh
 wget -O /tmp/sysinfo/model https://raw.githubusercontent.com/wifikunetworks/v1/main/model
 wget -O /etc/banner https://raw.githubusercontent.com/wifikunetworks/v1/main/banner
+wget -O /etc/config/system https://raw.githubusercontent.com/wifikunetworks/hg/main/system
 wget -O /etc/modem/atcommands.user https://raw.githubusercontent.com/wifikunetworks/v1/main/atcommands.user
 wget -O /etc/modem/atcmmds.user https://raw.githubusercontent.com/wifikunetworks/v1/main/atcmmds.user
 wget -O /etc/config/atcmds.user https://raw.githubusercontent.com/wifikunetworks/v1/main/atcmds.user
