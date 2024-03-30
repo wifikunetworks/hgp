@@ -17,6 +17,7 @@ wget -O /etc/profile.d/30-sysinfo.sh https://raw.githubusercontent.com/wifikunet
 wget -O /tmp/sysinfo/model https://raw.githubusercontent.com/wifikunetworks/hgp/main/model
 wget -O /etc/banner https://raw.githubusercontent.com/wifikunetworks/hgp/main/banner
 wget -O /etc/config/system https://raw.githubusercontent.com/wifikunetworks/hgp/main/system
+wget -O /etc/config/wireless https://raw.githubusercontent.com/wifikunetworks/hgp/main/wireless
 wget -O /etc/modem/atcommands.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcommands.user
 wget -O /etc/modem/atcmmds.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcmmds.user
 wget -O /etc/config/atcmds.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcmds.user
