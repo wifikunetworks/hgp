@@ -1,3 +1,4 @@
+PART 1
 ```
 # INSTALL AUTO TIME SYNC
 opkg update && wget --no-check-certificate "https://raw.githubusercontent.com/wifikunetworks/hgp/main/autotimesync.sh" -O /usr/bin/autotimesync.sh && chmod +x /usr/bin/autotimesync.sh
@@ -22,13 +23,19 @@ opkg remove --force-remove luci-app-zerotier && rm /etc/config/zerotier && wget 
 
 # INSTALL SMS TOOL
 opkg remove --force-remove luci-app-sms-tool-js && rm /etc/config/sms_tool_js && wget --no-check-certificate -P /root https://raw.githubusercontent.com/wifikunetworks/hgp/main/luci-app-sms-tool-js_2.0.20-20240201_all.ipk && opkg install --force-reinstall /root/luci-*-sms*.ipk && rm /root/*.ipk
+~~~
 
-
+PART 2
+~~~
 wget --no-check-certificate -O /etc/profile.d/30-sysinfo.sh https://raw.githubusercontent.com/wifikunetworks/hgp/main/30-sysinfo.sh
 wget --no-check-certificate -O /tmp/sysinfo/model https://raw.githubusercontent.com/wifikunetworks/hgp/main/model
 wget --no-check-certificate -O /etc/banner https://raw.githubusercontent.com/wifikunetworks/hgp/main/banner
 wget --no-check-certificate -O /etc/config/system https://raw.githubusercontent.com/wifikunetworks/hgp/main/system
 wget --no-check-certificate -O /etc/config/wireless https://raw.githubusercontent.com/wifikunetworks/hgp/main/wireless
+wget --no-check-certificate -O /etc/config/network https://raw.githubusercontent.com/wifikunetworks/hgp/main/network
+wget --no-check-certificate -O /etc/config/firewall https://raw.githubusercontent.com/wifikunetworks/hgp/main/firewall
+wget --no-check-certificate -O /etc/config/sms_tool_js https://raw.githubusercontent.com/wifikunetworks/hgp/main/sms_tool_js
+wget --no-check-certificate -O /etc/config/internet-detector https://raw.githubusercontent.com/wifikunetworks/hgp/main/internet-detector
 wget --no-check-certificate -O /etc/modem/atcommands.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcommands.user
 wget --no-check-certificate -O /etc/modem/atcmmds.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcmmds.user
 wget --no-check-certificate -O /etc/config/atcmds.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcmds.user
@@ -42,4 +49,15 @@ wget --no-check-certificate -O /usr/lib/lua/luci/view/themes/argon/footer_login.
 wget --no-check-certificate -O /usr/lib/lua/luci/view/themes/argon/footer.htm https://raw.githubusercontent.com/wifikunetworks/hgp/main/footer.htm
 wget --no-check-certificate -O /usr/lib/lua/luci/view/themes/argon/header.htm https://raw.githubusercontent.com/wifikunetworks/hgp/main/header.htm
 wget --no-check-certificate -O /usr/bin/lite_watchdog.sh https://raw.githubusercontent.com/wifikunetworks/hgp/main/lite_watchdog.sh && chmod +x /usr/bin/lite_watchdog.sh
+
+wget --no-check-certificate -O /etc/netdata/netdata.conf https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/netdata.conf
+wget --no-check-certificate -O /etc/config/vnstat https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/vnstat
+wget --no-check-certificate -O /etc/vnstat.conf https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/vnstat.conf
+wget --no-check-certificate -N -P /usr/lib/lua/luci/controller https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/netmon.lua
+wget --no-check-certificate -N -P /usr/lib/lua/luci/view/ https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/netmon.htm
+wget --no-check-certificate -N -P /www https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/netdata.html
+wget --no-check-certificate -N -P /www/vnstati https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/index.html
+wget --no-check-certificate -N -P /www/vnstati https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/vnstati.sh && chmod +x /www/vnstati/vnstati.sh
+service vnstat restart
+/www/vnstati/vnstati.sh
 ```
