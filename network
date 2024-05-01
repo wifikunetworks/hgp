@@ -5,7 +5,7 @@ config interface 'loopback'
 	option netmask '255.0.0.0'
 
 config globals 'globals'
-	option ula_prefix 'fdd5:03e3:316a::/48'
+	option ula_prefix 'fd27:b89f:cff1::/48'
 
 config device
 	option name 'br-lan'
@@ -32,7 +32,7 @@ config interface 'mm'
 
 config interface 'zerotier'
 	option proto 'none'
-	option device 'zerrotier'
+	option device 'zerotier'
 
 config interface 'tailscale'
 	option proto 'none'
