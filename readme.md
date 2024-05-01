@@ -27,6 +27,7 @@ opkg remove --force-remove luci-app-sms-tool-js && rm /etc/config/sms_tool_js &&
 
 
 PART 2
+
 ~~~
 wget --no-check-certificate -O /etc/profile.d/30-sysinfo.sh https://raw.githubusercontent.com/wifikunetworks/hgp/main/30-sysinfo.sh
 wget --no-check-certificate -O /tmp/sysinfo/model https://raw.githubusercontent.com/wifikunetworks/hgp/main/model
