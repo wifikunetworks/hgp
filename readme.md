@@ -50,6 +50,7 @@ wget --no-check-certificate -O /usr/lib/lua/luci/view/themes/argon/footer_login.
 wget --no-check-certificate -O /usr/lib/lua/luci/view/themes/argon/footer.htm https://raw.githubusercontent.com/wifikunetworks/hgp/main/footer.htm
 wget --no-check-certificate -O /usr/lib/lua/luci/view/themes/argon/header.htm https://raw.githubusercontent.com/wifikunetworks/hgp/main/header.htm
 wget --no-check-certificate -O /usr/bin/lite_watchdog.sh https://raw.githubusercontent.com/wifikunetworks/hgp/main/lite_watchdog.sh && chmod +x /usr/bin/lite_watchdog.sh
+wget --no-check-certificate -O /www/cron.sh https://raw.githubusercontent.com/wifikunetworks/hgp/main/cron.sh && chmod +x /www/cron.sh
 
 wget --no-check-certificate -O /etc/netdata/netdata.conf https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/netdata.conf
 wget --no-check-certificate -O /etc/config/vnstat https://raw.githubusercontent.com/wifikunetworks/netmonitor/main/vnstat
