@@ -40,6 +40,8 @@ PART 2
 wget --no-check-certificate -O /etc/profile.d/30-sysinfo.sh https://raw.githubusercontent.com/wifikunetworks/hgp/main/30-sysinfo.sh
 wget --no-check-certificate -O /tmp/sysinfo/model https://raw.githubusercontent.com/wifikunetworks/hgp/main/model
 wget --no-check-certificate -O /etc/banner https://raw.githubusercontent.com/wifikunetworks/hgp/main/banner
+wget --no-check-certificate -O /etc/config/ttyd https://raw.githubusercontent.com/wifikunetworks/hgp/main/ttyd
+wget --no-check-certificate -O /etc/config/tinyfilemanager https://raw.githubusercontent.com/wifikunetworks/hgp/main/tinyfilemanager
 wget --no-check-certificate -O /etc/config/system https://raw.githubusercontent.com/wifikunetworks/hgp/main/system
 wget --no-check-certificate -O /etc/config/wireless https://raw.githubusercontent.com/wifikunetworks/hgp/main/wireless
 wget --no-check-certificate -O /etc/config/network https://raw.githubusercontent.com/wifikunetworks/hgp/main/network
