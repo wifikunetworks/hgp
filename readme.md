@@ -48,9 +48,10 @@ wget --no-check-certificate -O /etc/config/network https://raw.githubusercontent
 wget --no-check-certificate -O /etc/config/firewall https://raw.githubusercontent.com/wifikunetworks/hgp/main/firewall
 wget --no-check-certificate -O /etc/config/sms_tool_js https://raw.githubusercontent.com/wifikunetworks/hgp/main/sms_tool_js
 wget --no-check-certificate -O /etc/config/internet-detector https://raw.githubusercontent.com/wifikunetworks/hgp/main/internet-detector
+wget --no-check-certificate -O /etc/config/speedtest https://raw.githubusercontent.com/wifikunetworks/hgp/main/speedtest
+wget --no-check-certificate -O /etc/config/atcmds.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcmds.user
 wget --no-check-certificate -O /etc/modem/atcommands.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcommands.user
 wget --no-check-certificate -O /etc/modem/atcmmds.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcmmds.user
-wget --no-check-certificate -O /etc/config/atcmds.user https://raw.githubusercontent.com/wifikunetworks/hgp/main/atcmds.user
 wget --no-check-certificate -O /www/luci-static/material/brand.png https://raw.githubusercontent.com/wifikunetworks/hgp/main/brand.png
 wget --no-check-certificate -O /www/luci-static/argon/brand.png https://raw.githubusercontent.com/wifikunetworks/hgp/main/brand.png
 wget --no-check-certificate -O /etc/rc.local https://raw.githubusercontent.com/wifikunetworks/hgp/main/rc.local
